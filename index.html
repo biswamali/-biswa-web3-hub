@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="BISWA — Web3 Content Creator, Researcher, Trader and Explorer.">
+<title>BISWA — Web3 Creator • Researcher • Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07080b;--panel:#0d1016;--panel2:#11151d;--text:#f5f7fb;--muted:#8d95a5;--line:rgba(255,255,255,.09);--accent:#9b8cff;--accent2:#5eead4;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(900px 500px at 80% -10%,rgba(155,140,255,.18),transparent 60%),radial-gradient(700px 500px at -10% 25%,rgba(94,234,212,.09),transparent 60%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,8,11,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.16em}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}.nav-cta{border:1px solid var(--line);padding:10px 15px;border-radius:999px;font-size:13px}
+.hero{padding:90px 0 70px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center;min-height:720px}.eyebrow{font-family:"DM Mono",monospace;color:var(--accent2);font-size:13px;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(62px,11vw,140px);line-height:.84;margin:20px 0 28px;letter-spacing:-.07em}.hero h1 span{background:linear-gradient(120deg,#fff 10%,#a99cff 55%,#62ead9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:680px;color:#b9c0cd;font-size:19px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 18px;border-radius:12px;border:1px solid var(--line);font-weight:600;background:rgba(255,255,255,.04)}.btn.primary{background:#f5f7fb;color:#08090b}.hero-card{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 30px 100px rgba(0,0,0,.35)}.avatar{width:120px;height:120px;border-radius:50%;border:5px solid rgba(255,255,255,.12);display:block;object-fit:cover;margin-bottom:25px}.hero-card h3{margin:0 0 8px;font-size:24px}.hero-card p{font-size:14px;margin:0;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:#c9cfda;font-size:12px;background:rgba(255,255,255,.025)}
+section{padding:88px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.kicker{font-family:"DM Mono";font-size:12px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}.section-head h2{font-size:clamp(34px,5vw,58px);line-height:1;margin:8px 0 0;letter-spacing:-.045em}.section-head p{max-width:420px;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:22px;min-height:190px;transition:.25s transform,.25s border-color}.card:hover{transform:translateY(-4px);border-color:rgba(155,140,255,.4)}.card .tag{font-family:"DM Mono";font-size:11px;color:var(--accent2);text-transform:uppercase}.card h3{font-size:21px;margin:12px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}.card .arrow{display:inline-block;margin-top:22px;color:#d9dce4}
+.timeline{position:relative;margin-top:30px}.timeline:before{content:"";position:absolute;left:87px;top:0;bottom:0;width:1px;background:var(--line)}.event{display:grid;grid-template-columns:175px 1fr;gap:35px;padding:0 0 42px;position:relative}.event:before{content:"";position:absolute;left:82px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(155,140,255,.08)}.year{font-family:"DM Mono";color:var(--muted);font-size:13px}.event h3{margin:0 0 7px}.event p{color:var(--muted);margin:0;max-width:720px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric{padding:24px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}.metric b{font-size:31px;display:block}.metric span{font-size:12px;color:var(--muted)}
+.work{display:grid;grid-template-columns:1fr 1fr;gap:14px}.work-card{min-height:260px;border-radius:24px;border:1px solid var(--line);padding:26px;background:radial-gradient(500px 180px at 80% 0,rgba(155,140,255,.12),transparent 60%),var(--panel)}.work-card h3{font-size:30px;margin:12px 0 8px}.work-card p{color:var(--muted);max-width:480px}.work-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.proofs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.proof{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel)}.proof img{width:100%;height:190px;object-fit:cover;display:block}.proof div{padding:15px}.proof small{color:var(--muted)}
+.cta{border:1px solid rgba(155,140,255,.28);border-radius:28px;padding:44px;background:radial-gradient(700px 260px at 20% 0,rgba(155,140,255,.18),transparent 60%),var(--panel)}.cta h2{font-size:clamp(35px,5vw,60px);line-height:1;margin:0 0 15px;letter-spacing:-.05em}.cta p{color:var(--muted);max-width:650px}
+footer{padding:40px 0 55px;color:var(--muted);font-size:13px}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.socials{display:flex;gap:15px;flex-wrap:wrap}.socials a:hover{color:#fff}
+#editor{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);z-index:100;padding:20px}.editor-box{width:min(800px,100%);max-height:90vh;overflow:auto;margin:auto;background:#0c0f15;border:1px solid var(--line);border-radius:24px;padding:24px}.editor-box h2{margin-top:0}.field{display:grid;gap:7px;margin:14px 0}.field input,.field textarea{background:#07090d;color:#fff;border:1px solid var(--line);border-radius:10px;padding:11px;font:inherit}.editor-actions{display:flex;gap:10px;margin-top:18px}.admin-note{font-size:12px;color:var(--muted);margin-top:10px}
+@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:65px}.hero-card{max-width:520px}.grid,.proofs{grid-template-columns:1fr 1fr}.work{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.timeline:before{left:5px}.event{grid-template-columns:1fr;padding-left:28px}.event:before{left:0}.section-head{display:block}.section-head p{margin-top:16px}}
+@media(max-width:540px){.wrap{width:min(var(--max),calc(100% - 24px))}.grid,.proofs,.metrics{grid-template-columns:1fr}.hero h1{font-size:72px}.hero p{font-size:16px}.nav-cta{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="brand" href="#">BISWA</a><div class="links"><a href="#journey">Journey</a><a href="#work">Work</a><a href="#content">Content</a><a href="#proof">Proof</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Work with me</a></div></nav>
+
+<main>
+<section class="hero"><div class="wrap" style="display:contents">
+  <div>
+    <div class="eyebrow">Web3 Creator · Researcher · Explorer</div>
+    <h1>BE<br><span>CURIOUS.</span></h1>
+    <p>I turn deep Web3 research into content that makes people stop scrolling — while exploring ecosystems, trading, collaborating with projects and documenting the journey.</p>
+    <div class="actions"><a class="btn primary" href="#work">Explore my work ↗</a><a class="btn" href="mailto:biswamali8752@gmail.com">Let's collaborate</a></div>
+  </div>
+  <aside class="hero-card">
+    <img class="avatar" src="assets/biswa-avatar.png" alt="BISWA avatar">
+    <h3>BISWA</h3><p>Web3 Content Creator & Researcher</p>
+    <div class="chips"><span class="chip">Content</span><span class="chip">Research</span><span class="chip">Trading</span><span class="chip">Ambassador</span><span class="chip">Affiliate</span></div>
+    <div class="chips"><a class="chip" href="https://x.com/MaliBiswa" target="_blank">𝕏 @MaliBiswa</a><span class="chip">India 🇮🇳</span></div>
+  </aside>
+</div></section>
+
+<section id="journey"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / The journey</div><h2>Not a portfolio.<br>A living story.</h2></div><p>From Web2 to Web3, trading, research, content and partnerships — the website grows as the journey grows.</p></div>
+<div class="timeline">
+<div class="event"><div class="year">2021</div><div><h3>Started in Web2</h3><p>Entered the digital world through Web2 and began building the foundation for what came next.</p></div></div>
+<div class="event"><div class="year">2023</div><div><h3>Entered Web3 & Crypto</h3><p>Started exploring protocols, communities, trading and new ecosystems — going deep rather than staying on the surface.</p></div></div>
+<div class="event"><div class="year">2023 →</div><div><h3>Trader → Researcher</h3><p>Explored markets and projects, ran experiments and kept learning across multiple ecosystems.</p></div></div>
+<div class="event"><div class="year">2025 →</div><div><h3>Content Creator</h3><p>Turned research into high-attention Web3 content, collaborations, ambassador work and affiliate partnerships.</p></div></div>
+<div class="event"><div class="year">NOW</div><div><h3>Building the next chapter</h3><p>Creating, researching, trading, collaborating and documenting what comes next.</p></div></div>
+</div></div></section>
+
+<section id="work"><div class="wrap"><div class="section-head"><div><div class="kicker">02 / Selected work</div><h2>Where I show up.</h2></div><p>Different projects need different kinds of value. These are the roles I have taken across Web3.</p></div>
+<div class="work">
+<div class="work-card"><div class="kicker">Deep exploration</div><h3>Base</h3><p>Explored the ecosystem deeply and created content around projects, narratives and opportunities.</p><div class="work-meta"><span class="chip">Research</span><span class="chip">Content</span></div></div>
+<div class="work-card"><div class="kicker">Influencer / content</div><h3>Zama</h3><p>Created multiple posts exploring and communicating the Zama ecosystem to my audience.</p><div class="work-meta"><span class="chip">Content</span><span class="chip">Research</span></div></div>
+<div class="work-card"><div class="kicker">Node runner</div><h3>Gensyn</h3><p>Explored Gensyn hands-on as a node runner, documenting the technical experience.</p><div class="work-meta"><span class="chip">Node</span><span class="chip">Technical exploration</span></div></div>
+<div class="work-card"><div class="kicker">Research</div><h3>Polymarket · Walrus</h3><p>Deep exploration across prediction markets, infrastructure and emerging Web3 ecosystems.</p><div class="work-meta"><span class="chip">Research</span><span class="chip">Ecosystem</span></div></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="section-head"><div><div class="kicker">03 / Roles & relationships</div><h2>Trusted to represent.</h2></div><p>Ambassador, affiliate, partner, collaborator and creator — with room for the next chapter.</p></div>
+<div class="grid">
+<div class="card"><span class="tag">Collaboration</span><h3>Shark Funded</h3><p>Collaboration and content around funded trading.</p></div>
+<div class="card"><span class="tag">Affiliate</span><h3>Evedex</h3><p>Affiliate relationship and community-facing content.</p></div>
+<div class="card"><span class="tag">Ambassador</span><h3>HeLa Network</h3><p>Ambassador role with ecosystem and community content.</p></div>
+<div class="card"><span class="tag">Ambassador</span><h3>DLICOM</h3><p>Ambassador/community contribution.</p></div>
+<div class="card"><span class="tag">Partnership</span><h3>MoonPay</h3><p>Partnership and project-facing content.</p></div>
+<div class="card"><span class="tag">Add next</span><h3>Future collaborations</h3><p>Designed to grow — new roles, campaigns and partnerships can be added anytime.</p></div>
+</div></div></section>
+
+<section id="content"><div class="wrap"><div class="section-head"><div><div class="kicker">04 / Content impact</div><h2>Research → attention.</h2></div><p>Not just tweets. The goal is to make complex projects understandable, interesting and impossible to scroll past.</p></div>
+<div class="metrics"><div class="metric"><b>6K+</b><span>X followers shown in current profile snapshot</span></div><div class="metric"><b>∞</b><span>Projects researched & explored</span></div><div class="metric"><b>Multi</b><span>Ambassador + affiliate + partner roles</span></div><div class="metric"><b>1:1</b><span>Project-focused collaboration mindset</span></div></div>
+<div class="grid" style="margin-top:14px"><div class="card"><span class="tag">Tweet analysis</span><h3>Show the thinking.</h3><p>Each featured post can include the original tweet, performance metrics, context, research angle and why it worked.</p><a class="arrow" href="https://x.com/MaliBiswa" target="_blank">View X profile ↗</a></div><div class="card"><span class="tag">Content archive</span><h3>Best work, curated.</h3><p>Keep only the strongest posts and campaigns here instead of turning the website into a noisy feed.</p></div><div class="card"><span class="tag">Future-ready</span><h3>Add new wins.</h3><p>New tweets, campaigns and milestones can be added without redesigning the entire site.</p></div></div></div></section>
+
+<section id="proof"><div class="wrap"><div class="section-head"><div><div class="kicker">05 / Proof vault</div><h2>Receipts, not claims.</h2></div><p>Selected screenshots and confirmations. More can be added later as new achievements happen.</p></div>
+<div class="proofs">
+<div class="proof"><img src="assets/hela-ambassador.png" alt="HeLa Ambassador proof"><div><b>HeLa Ambassador</b><br><small>Ambassador program confirmation</small></div></div>
+<div class="proof"><img src="assets/shark-funded.png" alt="Shark Funded proof"><div><b>Shark Funded</b><br><small>Funded challenge / collaboration proof</small></div></div>
+<div class="proof"><img src="assets/gensyn-node.png" alt="Gensyn node setup"><div><b>Gensyn Node</b><br><small>Hands-on node running</small></div></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta"><div class="kicker">06 / Let's work</div><h2>Have a project worth exploring?</h2><p>For Web3 projects, campaigns, research, ambassador programs, affiliate partnerships or creator collaborations — reach out.</p><div class="actions"><a class="btn primary" href="mailto:biswamali8752@gmail.com">Email BISWA ↗</a><a class="btn" href="https://x.com/MaliBiswa" target="_blank">DM on X ↗</a></div></div></div></section>
+</main>
+
+<footer><div class="wrap footer"><div>© <span id="year"></span> BISWA. Built to evolve.</div><div class="socials"><a href="https://x.com/MaliBiswa" target="_blank">X</a><a href="https://t.me/MaliBiswa" target="_blank">Telegram</a><a href="https://discord.com/users/bisumali" target="_blank">Discord</a><a href="https://www.linkedin.com/in/biswabrata-mali-a26a77331" target="_blank">LinkedIn</a><a href="https://www.instagram.com/mr.biswa001" target="_blank">Instagram</a><a href="mailto:biswamali8752@gmail.com">Email</a></div></div></footer>
+
+<div id="editor"><div class="editor-box"><h2>Future Content Editor</h2><p style="color:#8d95a5">Demo editor for adding a new achievement locally. For a production site, this can be replaced with a secure login + database dashboard.</p>
+<div class="field"><label>Achievement title</label><input id="aTitle" placeholder="e.g. New ambassador role"></div>
+<div class="field"><label>Date / year</label><input id="aDate" placeholder="2026"></div>
+<div class="field"><label>Description</label><textarea id="aDesc" rows="4" placeholder="What happened?"></textarea></div>
+<div class="editor-actions"><button class="btn primary" onclick="saveAchievement()">Add achievement</button><button class="btn" onclick="closeEditor()">Close</button></div><div class="admin-note">Tip: this demo stores entries in this browser only.</div></div></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function openEditor(){document.getElementById('editor').style.display='flex'}
+function closeEditor(){document.getElementById('editor').style.display='none'}
+function saveAchievement(){
+ const t=document.getElementById('aTitle').value.trim(),d=document.getElementById('aDate').value.trim(),x=document.getElementById('aDesc').value.trim();
+ if(!t)return alert('Add an achievement title.');
+ const arr=JSON.parse(localStorage.getItem('biswaAchievements')||'[]');arr.push({title:t,date:d,desc:x});localStorage.setItem('biswaAchievements',JSON.stringify(arr));alert('Saved locally. A production version can sync this to your admin dashboard/database.');closeEditor();
+}
+</script>
+</body>
+</html>
