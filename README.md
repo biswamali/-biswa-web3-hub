@@ -1,13 +1,12 @@
-# BISWA — Web3 Creator / Researcher
+# BISWA Web3 Hub v5
 
-Premium personal Web3 identity site with supplied Base, Polymarket, Gensyn, Zama and Arc artwork, proof vault, and real X embeds.
+Premium neon/futuristic portfolio update based on the approved BISWA design direction.
 
-## Files
-- `index.html` — page structure
-- `style.css` — responsive visual design
-- `app.js` — tweet rendering/filtering
-- `tweets.js` — tweet links and research notes
-- `logo-*.png` — supplied ecosystem artwork
-- proof images — supplied screenshots/receipts
+Updated:
+- 6 project Work cards with supplied project logos: Base, Zama, Gensyn, Polymarket, Walrus, Arc.
+- Premium 3-column Work layout on desktop with responsive mobile layout.
+- Content cards keep the real X URLs and live X embeds; no invented tweet text or metrics.
+- Walrus logo added as `logo-walrus.png`.
+- Existing proof vault and contact/profile content preserved.
 
-Static version; ready for GitHub Pages/Vercel-style static hosting.
+Deploy by replacing the repository files with this package.

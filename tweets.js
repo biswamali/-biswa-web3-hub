@@ -1,4 +1,5 @@
 window.BISWA_TWEETS = [
+ {project:'Arc',url:'https://x.com/MaliBiswa/status/2098462827468251479',label:'Arc / Architect',angle:'Architect contribution + ecosystem work',note:'Arc Architect post. Open the original post for the live post and media.'},
  {project:'Zama',url:'https://x.com/MaliBiswa/status/1996037628723167627',label:'Zama / Post 01',angle:'Ecosystem research + content',note:'Featured Zama work. Open the original post for the live post and media.'},
  {project:'Zama',url:'https://x.com/MaliBiswa/status/1996482588756898139',label:'Zama / Post 02',angle:'Research-led content',note:'Second Zama feature. The card is linked directly to X.'},
  {project:'Base',url:'https://x.com/MaliBiswa/status/2047944101690212405',label:'Base / Post 01',angle:'Ecosystem exploration',note:'Base research/content feature.'},
