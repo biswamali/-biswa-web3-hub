@@ -13,7 +13,7 @@
   grid.innerHTML=list.map(t=>`<article class="tweet-card real-tweet-card">
     <div class="tweet-top"><span style="display:flex;align-items:center;gap:8px"><img src="${logos[t.project]||''}" alt="${t.project} logo" style="width:22px;height:22px;border-radius:7px;object-fit:cover;background:#fff;${logos[t.project]?'':'display:none'}">${t.project}</span><a href="${t.url}" target="_blank" rel="noreferrer">OPEN ON X ↗</a></div>
     <div class="tweet-embed-wrap">
-      <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true"><a href="${t.url}"></a></blockquote>
+      <blockquote class="twitter-tweet" data-theme="light" data-dnt="true"><a href="${t.url}"></a></blockquote>
     </div>
     <div class="tweet-bottom"><div><span>${t.category.toUpperCase()} · RESEARCH ANGLE</span><b>${t.note}</b></div><a class="open" href="${t.url}" target="_blank" rel="noreferrer">VIEW POST ↗</a></div>
   </article>`).join('');
