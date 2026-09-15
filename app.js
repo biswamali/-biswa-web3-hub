@@ -18,3 +18,25 @@
  filters.addEventListener('click',e=>{const b=e.target.closest('.filter');if(!b)return;active=b.dataset.project;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));render();});
  render();
 })();
+
+
+// V6 global navigation menu — works on desktop and mobile
+(function(){
+  const toggle=document.getElementById('menu-toggle');
+  const close=document.getElementById('menu-close');
+  const panel=document.getElementById('menu-panel');
+  const overlay=document.getElementById('menu-overlay');
+  if(!toggle || !close || !panel || !overlay) return;
+  const links=panel.querySelectorAll('a[href^="#"]');
+  function setOpen(open){
+    document.body.classList.toggle('menu-open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    panel.setAttribute('aria-hidden',String(!open));
+    toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+  }
+  toggle.addEventListener('click',()=>setOpen(!document.body.classList.contains('menu-open')));
+  close.addEventListener('click',()=>setOpen(false));
+  overlay.addEventListener('click',()=>setOpen(false));
+  links.forEach(link=>link.addEventListener('click',()=>setOpen(false)));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape') setOpen(false);});
+})();

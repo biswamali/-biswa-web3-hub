@@ -10,3 +10,10 @@ Updated:
 - Existing proof vault and contact/profile content preserved.
 
 Deploy by replacing the repository files with this package.
+
+
+## V6 navigation
+Global hamburger menu available on desktop and mobile, with About, Work, Content, Proof, Currently, Contact, social links, and contact CTA.
+
+
+V7 update: the hero NOW EXPLORING card now lists Base, Polymarket, Robinhood, and Arc.
