@@ -43,3 +43,21 @@
   links.forEach(link=>link.addEventListener('click',()=>setOpen(false)));
   document.addEventListener('keydown',e=>{if(e.key==='Escape') setOpen(false);});
 })();
+
+
+// V12 professional scroll-reveal motion
+(function(){
+  const targets=[];
+  document.querySelectorAll('.section > .kicker, .section-title, .about-grid, .timeline, .work-card, .role-strip, .ecosystem-panel, .tweet-card, .proof, .architect-feature, .now > div, .now-list, .contact > div, footer').forEach((el,i)=>{
+    el.setAttribute('data-reveal','');
+    if(el.classList.contains('work-card') || el.classList.contains('proof')) el.setAttribute('data-reveal-delay', String((i%4)+1));
+    targets.push(el);
+  });
+  if(!('IntersectionObserver' in window)) { targets.forEach(el=>el.classList.add('is-visible')); return; }
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){ entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -45px 0px'});
+  targets.forEach(el=>observer.observe(el));
+})();
