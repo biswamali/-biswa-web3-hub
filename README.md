@@ -1,19 +1,16 @@
-# BISWA Web3 Hub v5
+# BISWA Web3 Hub — V9
 
-Premium neon/futuristic portfolio update based on the approved BISWA design direction.
+Premium personal portfolio for BISWA, focused on Web3 content, research, trading and ecosystem exploration.
 
-Updated:
-- 6 project Work cards with supplied project logos: Base, Zama, Gensyn, Polymarket, Walrus, Arc.
-- Premium 3-column Work layout on desktop with responsive mobile layout.
-- Content cards keep the real X URLs and live X embeds; no invented tweet text or metrics.
-- Walrus logo added as `logo-walrus.png`.
-- Existing proof vault and contact/profile content preserved.
+## V9 changes
+- Editorial hero inspired by the requested reference layout.
+- Hero headline updated to: “Finding opportunities in Web3 since 2021.”
+- Removed the old upper “WEB3 CREATOR / RESEARCHER / EXPLORER” pill.
+- Reused the supplied BISWA profile image with a clean, unobstructed presentation.
+- Restored the user's research-led quote: “I turn deep Web3 research into content people actually stop to read — while exploring ecosystems, trading, collaborating and documenting the journey.”
+- Preserved the V8 content categories: All / Airdrops / Education / Trading.
+- Preserved the global hamburger menu, project work cards, proof vault, ecosystem roles and existing tweet links.
+- Trading remains a “Coming Soon” state until trading posts are added.
 
-Deploy by replacing the repository files with this package.
-
-
-## V6 navigation
-Global hamburger menu available on desktop and mobile, with About, Work, Content, Proof, Currently, Contact, social links, and contact CTA.
-
-
-V7 update: the hero NOW EXPLORING card now lists Base, Polymarket, Robinhood, and Arc.
+## Deploy
+Upload the contents of this folder to the GitHub repository connected to Vercel. Vercel will redeploy automatically.
